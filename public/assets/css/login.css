@@ -1,0 +1,282 @@
+@font-face{
+	font-family: Corp Games;
+	src: url("../fonts/Corporation_Games.otf");
+}
+
+@font-face{
+	font-family: Gotham-Medium;
+	src: url(../fonts/gotham-cufonfonts/GothamMedium.ttf);
+}
+
+@font-face{
+	font-family: Gotham-Black;
+	src: url(../fonts/gotham-cufonfonts/Gotham-Black.otf);
+}
+
+*{
+	font-family: Gotham-Medium;
+	padding: 0;
+	margin: 0;
+	font-size: 20px;
+}
+
+body{
+    /* overflow: hidden; */
+	background: linear-gradient(#04102D , #122857 , #04102D);
+	background-size:100% 100%;
+	background-attachment: fixed;
+}
+
+.container{
+	max-width: 100vw;
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+}
+
+.container img{
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width: 80px;
+	padding-top: 25px;
+	margin-bottom: 1%;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.logo p{
+	font-family: Corp Games;
+	font-size: 1.5rem;
+	text-align: center;
+	color: #fbffef;
+}
+.header {
+	position: relative;
+	padding-bottom: 10px;
+}
+/* .container form{
+	margin-top: 220px;
+	max-width:350px;
+	width:90%;
+  	background-color: rgba(0, 0, 18, 0.58);
+  	padding:10px 40px 20px 40px;
+  	border-radius:7px;
+  	transform:translate(-50%, -50%);
+  	position:relative;
+  	top:30%;
+  	left:50%;
+  	color:#fff;
+  	box-shadow:3px 3px 4px rgba(0,0,0,0.2);
+} */
+.login-content {
+	/* margin-top: 220px; */
+	text-align: center;
+	margin-top: 50px;
+	max-width:350px;
+	width:90%;
+  	background-color: rgba(0, 0, 18, 0.58);
+  	padding:10px 40px 20px 40px;
+  	border-radius:7px;
+  	transform:translate(-50%, -50%);
+  	position:relative;
+  	top:30%;
+  	left:50%;
+  	color:#fff;
+  	box-shadow:3px 3px 4px rgba(0,0,0,0.2);
+}
+.login-content form p {
+	font-size: 12px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #fbffef;
+}
+
+form .title{
+	font-family: Gotham-Black;
+	text-transform: uppercase;
+	font-size: 2.9rem;
+	color: #00b2ca;
+	text-align: center;
+	margin: 0px;
+}
+
+.login-content .input-div{
+	position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 0px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid white;
+}
+
+.login-content .input-div.one{
+	margin-top: 0;
+}
+
+.i{
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.i i{
+	transition: .3s;
+}
+
+.input-div > div{
+    position: relative;
+	height: 45px;
+}
+
+.input-div > div > h5{
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #999;
+	font-size: 18px;
+	transition: .3s;
+}
+
+.input-div:before, .input-div:after{
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	width: 0%;
+	height: 2px;
+	background-color: #00b2ca;
+	transition: .4s;
+}
+
+.input-div:before{
+	right: 50%;
+}
+
+.input-div:after{
+	left: 50%;
+}
+
+.input-div.focus:before, .input-div.focus:after{
+	width: 50%;
+}
+
+.input-div.focus > div > h5{
+	top: -5px;
+	font-size: 15px;
+}
+
+.input-div.focus > .i > i{
+	color: #00b2ca;
+}
+
+.input-div > div > input{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 0.1rem 0.7rem;
+	font-size: 1.2rem;
+	color: #fbffef;
+	font-family: 'poppins', sans-serif;
+}
+
+.input-div.pass{
+	margin-bottom: 4px;
+}
+
+.form-item {
+	margin: 20px 0;
+}
+
+.btn{
+	width: 100%;
+	height: 50px;
+	font-size: 1.2rem;
+	background:#00B2CA;
+  	border:none;
+  	border-radius:4px;
+  	padding:11px;
+  	box-shadow:none;
+	margin-top:13px;
+	margin-bottom: 13px;  
+	text-shadow:none;
+	outline:none;
+	color: white;
+	cursor: pointer;
+	font-family: gotham-medium;
+}
+
+.container form .btn:hover, .container .btn:active {
+	background:#F7567C;
+	outline:none;
+}
+
+.regist {
+	text-align: center;
+}
+.forgot , .regist {
+	margin-top: 5px;
+  	font-size:12px;
+  	color:#FF7700;
+  	text-decoration:none;
+}
+
+.forgot:hover, .forgot:active , .regist:hover , .regist:active {
+	color: white;
+	text-decoration:none;
+}
+
+.validation {
+	color: red;
+	font-size: 13px;
+	margin-top: 6px;
+}
+.flash {
+	margin: auto;
+	max-width: 600px;
+}
+.alert {
+	font-size: 15px;
+}
+@media screen and (max-width: 1050px){
+	.container{
+		grid-gap: 5rem;
+	}
+	
+}
+
+@media screen and (max-width: 1000px){
+	form{
+		max-width: 300px;
+	}
+
+	.login-content h2{
+        font-size: 2.4rem;
+        margin: 8px 0;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.container{
+		grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (max-width: 400px){
+	form{
+		max-width: 250px;
+	}
+	.logo p{
+
+	}
+	.login-content h2{
+        font-size: 1.8rem;
+        margin: 8px 0;
+	}
+}

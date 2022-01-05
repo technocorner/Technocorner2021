@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf=8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Regist Details - IoT Dev | Technocorner 2021</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1 class="ftitle">Technocorner 2021</h1>
+            <h2 class="fcomp">Registration Details</h2>
+            <h3 class="fcomp">IoT Development Competition</h3>
+        </div>
+        <form class="form-horizontal">
+            <div class="form-group">
+              <label for="nama-tim" class="col-sm-2 control-label">Nama Tim</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="nama-tim" disabled value="NL_VVibu">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="asal-instansi" class="col-sm-2 control-label">Asal Instansi</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="asal-instansi" disabled value="Universitas Indonesia">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="nama-ketua" class="col-sm-2 control-label">Nama Ketua Tim</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="nama-ketua" disabled value="Andy Amstrong">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="nama-anggota-1" class="col-sm-2 control-label">Nama Angota 1</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="nama-anggota-1" disabled value="Sidnei">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="nama-anggota-2" class="col-sm-2 control-label">Nama Anggota 2</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="nama-anggota-2" disabled value="Alfa Farid">
+              </div>
+            </div>
+            <label class="nlabel" for="bukti-bayar">Status Pembayaran: BELUM melakukan pembayaran</label>
+            <div class="row">
+                <div>
+                    <label class="nlabel" for="bukti-bayar">Upload Bukti Pembayaran</label>
+                </div>
+                <div class="col-25">
+                    <input type="file" id="upload2" accept="image/*">
+                    <label class="upbtn" for="upload2">Choose File</label>
+                </div>
+                <div class="col-75">
+                    <span class="filechsn" id="fileup2">No file chosen</span>
+                </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="edit" class="edit-btn pull-right" id="edit" onclick="return handleEdit()">Edit</button>
+          
+                <button type="save" class="save-btn pull-right" id="save" hidden>Save</button>
+              </div>
+            </div>
+          </form>
+        
+    </div>
+
+    <script src="js/details-regist-eec-iot.js"></script>
+</body>

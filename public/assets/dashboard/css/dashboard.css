@@ -1,0 +1,21 @@
+@font-face{
+	font-family: Corp Games;
+	src: url("../fonts/corporation-games/Corporation\ Games.otf");
+}
+
+@font-face{
+	font-family: Gotham-Medium;
+	src: url(../fonts/gotham-cufonfonts/GothamMedium.ttf);
+}
+
+@font-face{
+	font-family: Gotham-Black;
+	src: url(../fonts/gotham-cufonfonts/Gotham-Black.otf);
+}
+
+.brand-text{
+	font-family: Corp Games;
+	font-size: 1rem;
+	text-align: center;
+	color: #fbffef;
+}

@@ -1,0 +1,151 @@
+/*DARI STYLES.CSS TAUN LALU*/
+
+
+.btn-ref {
+  background: linear-gradient(to right top, rgb(255, 119, 0), rgb(255, 178, 15));
+  border: 0px;
+  border-radius: 20px;
+  font-weight: 300;
+}
+
+.tc-overlay {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*background: -moz-linear-gradient(to right, rgba(4, 16, 45, 0.6), rgba(247, 86, 124, 0.15));
+  background: -webkit-linear-gradient(to right, rgba(4, 16, 45, 0.6), rgba(247, 86, 124, 0.15));
+  background: linear-gradient(to right, rgba(4, 16, 45, 0.6), rgba(247, 86, 124, 0.15));*/
+  background-image: linear-gradient(to right, rgba(4, 16, 45, 0.6), rgba(247, 86, 124, 0.15));
+  background-color: rgba(4, 16, 45, 1);
+}
+
+
+/*DARI MAIN.CSS TAUN LALU*/
+
+/* ===================================================================
+ * # base style overrides
+ *
+ * ------------------------------------------------------------------- */
+
+html {
+    font-size: 10px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #111111;
+    font-family: "lora-regular", serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.765;
+    color: #757575;
+    margin: 0;
+    padding: 0;
+}
+
+/*css khusus untuk error page*/
+
+  #notfound {
+    position: relative;
+    height: 100vh;
+}
+
+#notfound .notfound {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+.notfound {
+    max-width: 520px;
+    width: 100%;
+    text-align: center;
+    line-height: 1.4;
+    animation: fadein .4s;
+}
+
+.notfound .text-404 {
+    height: 190px;
+    color: white;
+}
+
+.notfound #text-404{
+    animation: fadein .5s;
+}
+
+.notfound .text-404 h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 146px;
+    margin: 0px;
+}
+
+.notfound h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    color: #232323;
+}
+
+.notfound h3{
+    font-family: "gotham";
+    font-size: 26px;
+    
+}
+
+.notfound p {
+    font-family: 'Montserrat', sans-serif;
+    color: #787878;
+    font-weight: 300;
+}
+
+.notfound a {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    padding: 12px 30px;
+    font-weight: 700;
+    background-color: #f99827;
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+    
+}
+
+.left-img{
+    position: relative;
+    height: 100vh;
+}
+
+.left-img img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    height: 60%;
+
+    animation: fadein .5s;
+}
+
+
+@keyframes fadein {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}

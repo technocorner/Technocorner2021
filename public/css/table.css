@@ -1,0 +1,46 @@
+td.details-control {
+  background: url("https://www.datatables.net/examples/resources/details_open.png")
+    no-repeat center center;
+  cursor: pointer;
+}
+tr.shown td.details-control {
+  background: url("https://www.datatables.net/examples/resources/details_close.png")
+    no-repeat center center;
+}
+
+table * {
+  transition: 1s;
+}
+
+th {
+  text-align: center;
+}
+
+td {
+  vertical-align: middle !important;
+}
+
+.shown,
+.active {
+  background-color: rgb(199, 199, 199) !important;
+}
+
+.childrow * {
+  background-color: rgb(233, 233, 233);
+}
+
+.ui-autocomplete {
+  padding: 10px;
+  list-style-type: none;
+  background-color: white;
+  border: 1px black solid;
+  border-radius: 1%;
+}
+
+.ui-menu-item:hover {
+  background-color: gray;
+}
+
+.ui-helper-hidden-accessible {
+  display: none;
+}

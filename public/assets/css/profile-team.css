@@ -1,0 +1,19 @@
+/* .profile-team .card-title {
+    /* display: block;
+    
+}
+.profile-team .card-body-profile {
+    margin: 15px;
+}
+.profile-team .data-team{
+    display: block;
+} */ 
+.card-body {
+    display: block;
+}
+.card-content {
+    text-align: center;
+}
+.card-content, .card-title {
+    display: block;
+}

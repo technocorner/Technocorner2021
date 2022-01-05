@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf=8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="css/form.css">
+    <title>IoT Form | Technocorner 2021</title>
+    <link rel="shortcut icon" href="../../../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../../../favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1 class="ftitle">Technocorner 2021</h1>
+            <h3 class="fcomp">IoT Development Competition</h3>
+        </div>
+        <form action="">
+            <div class="row">
+                <div>
+                    <label class="nlabel" for="name">Nama Tim</label>
+                </div>
+                <div>
+                    <input type="text" placeholder="...">
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label class="nlabel" for="name">Asal Instansi</label>
+                </div>
+                <div>
+                    <input type="text" placeholder="...">
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label class="nlabel" for="name">Nama Ketua Tim</label>
+                </div>
+                <div>
+                    <input type="text" placeholder="...">
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label class="nlabel" for="name">Foto Kartu Tanda Mahasiswa Ketua</label>
+                </div>
+                <div class="col-25">
+                    <input type="file" id="upload1-iot" accept="image/*">
+                    <label class="upbtn" for="upload1-iot">Choose File</label>
+                </div>
+                <div class="col-75">
+                    <span class="filechsn" id="fileup1-iot">No file chosen</span>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label class="nlabel" for="name">Nama Anggota 1</label>
+                </div>
+                <div>
+                    <input type="text" placeholder="...">
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label class="nlabel" for="name">Foto Kartu Tanda Mahasiswa Anggota 1</label>
+                </div>
+                <div class="col-25">
+                    <input type="file" id="upload2-iot" accept="image/*">
+                    <label class="upbtn" for="upload2-iot">Choose File</label>
+                </div>
+                <div class="col-75">
+                    <span class="filechsn" id="fileup2-iot">No file chosen</span>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label class="nlabel" for="name">Nama Ketua Anggota 2</label>
+                </div>
+                <div>
+                    <input type="text" placeholder="...">
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label class="nlabel" for="name">Foto Kartu Tanda Mahasiswa Anggota 2</label>
+                </div>
+                <div class="col-25">
+                    <input type="file" id="upload3-iot" accept="image/*">
+                    <label class="upbtn" for="upload3-iot">Choose File</label>
+                </div>
+                <div class="col-75">
+                    <span class="filechsn" id="fileup3-iot">No file chosen</span>
+                </div>
+            </div>
+            <div class="row">
+                <input class="submitbtn" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <script src="js/form-iot.js"></script>
+</body>
