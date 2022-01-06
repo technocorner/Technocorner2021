@@ -22,7 +22,7 @@ class App extends BaseConfig
 	|
 	*/
 	// public $baseURL = 'https://technocornerugm.com/';
-	public $baseURL = 'https://archive-tc-2021.herokuapp.com/';
+	public $baseURL = 'https://2021.technocorner.id';
 
 	/*
 	|--------------------------------------------------------------------------
